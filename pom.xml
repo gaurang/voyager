@@ -1,0 +1,374 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>voyager</groupId>
+  <artifactId>voyager</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+
+  
+  
+  <!-- 
+  
+  <groupId>voyager</groupId>
+  <artifactId>voyager</artifactId>
+  <version>0.1-B</version>
+  <packaging>war</packaging>
+  
+   -->
+  
+      <properties>
+        <mysql.connector.version>5.1.31</mysql.connector.version>
+        <springframework.version>4.2.1.RELEASE</springframework.version>
+		<spring.security.version>4.0.0.RELEASE</spring.security.version>
+        
+    </properties>
+  
+     <dependencies>
+
+     	<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+	   </dependency>
+			         
+       <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
+		 <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		       
+ 	<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.1.0.Final</version>
+	</dependency>
+	
+	<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.1.3.Final</version>
+	</dependency>
+ 	
+  	 
+<!-- 	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>1.7.12</version>
+	</dependency>
+	 -->
+
+	
+
+	<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+	<dependency>
+		<groupId>ch.qos.logback</groupId>
+		<artifactId>logback-classic</artifactId>
+		<version>1.1.3</version>
+	</dependency>
+	
+	<!-- 
+	<dependency>
+		<groupId>org.mongodb</groupId>
+		<artifactId>mongo-java-driver</artifactId>
+		<version>3.1.1</version>
+	</dependency> -->
+	
+<!-- 	<dependency>
+        <groupId>org.hibernate.common</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>4.0.4.Final</version>
+    </dependency>
+ -->	
+<!--
+ 	<dependency>
+	    <groupId>org.hibernate.ogm</groupId>
+	    <artifactId>hibernate-ogm-mongodb</artifactId>
+	    <version>4.2.0.Final</version>
+	</dependency>
+ -->		
+	
+<!-- 	 <dependency>
+		<groupId>org.webjars</groupId>
+		<artifactId>bootstrap</artifactId>
+		<version>3.3.2-1</version>
+	</dependency> -->
+	
+<!-- 	<dependency> 
+	    <groupId>org.hibernate.ogm</groupId> 
+	    <artifactId>hibernate-ogm-neo4j</artifactId> 
+	    <version>4.2.0.Final</version>
+	    
+	</dependency> 
+ -->	
+ 	<dependency> 
+	    <groupId>org.jboss.jbossts</groupId> 
+	    <artifactId>jbossjta</artifactId> 
+	    <version>4.16.4.Final</version>
+	    
+	</dependency> 
+   <!-- MySQL -->
+       <dependency>
+           <groupId>mysql</groupId>
+           <artifactId>mysql-connector-java</artifactId>
+           <version>${mysql.connector.version}</version>
+       </dependency>
+ 
+       <!-- Apache Commons FileUpload -->
+		<dependency>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>1.3.1</version>
+		</dependency>
+		
+		<!-- Apache Commons IO -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.4</version>
+		</dependency>
+<!-- 		<dependency>  
+			 <groupId>org.codehaus.jackson</groupId>  
+			 <artifactId>jackson-mapper-asl</artifactId>  
+			 <version>1.9.10</version>  
+		</dependency>  
+ -->
+ <!-- 		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>2.7.0-rc3</version>
+		</dependency>
+				 -->
+		<dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.5.3</version>
+        </dependency>		
+				 
+		<dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.5.3</version>
+        </dependency>		
+
+		<dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.3</version>
+        </dependency>		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.0-alpha-1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-taglibs</artifactId>
+			<version>${spring.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.nimbusds</groupId>
+			<artifactId>nimbus-jose-jwt</artifactId>
+			<version>4.11.2</version>
+		</dependency>
+				
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>1.0.0.RELEASE</version>
+		</dependency>
+				
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+<!-- 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+            <version>${springframework.version}</version>
+		</dependency>
+-->				
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+ 
+
+  		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-websocket</artifactId>
+		    <version>${springframework.version}</version>
+		</dependency>
+        
+        <dependency>
+		    <groupId>javax.websocket</groupId>
+		    <artifactId>javax.websocket-api</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		</dependency>
+		<dependency>
+		   <groupId>org.apache.tomcat.embed</groupId>
+		   <artifactId>tomcat-embed-websocket</artifactId>
+		   <version>7.0.52</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.rasc</groupId>
+			<artifactId>wampspring</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+	<dependency>
+	    <groupId>com.google.maps</groupId>
+	    <artifactId>google-maps-services</artifactId>
+	    <version>0.1.11</version>
+	</dependency>
+	<dependency>
+		<groupId>bouncycastle</groupId>
+		<artifactId>bcprov-jdk14</artifactId>
+		<version>138</version>
+	</dependency>
+				        		  		
+<!--
+ 		<dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+			<version>5.13.1</version>
+        </dependency>
+ -->        
+ 		
+<!-- 	<dependency>
+		    <groupId>com.googlecode.jsontoken</groupId>
+		    <artifactId>jsontoken</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.google.guava</groupId>
+		    <artifactId>guava</artifactId>
+		    <version>18.0</version>
+		</dependency>
+ -->								
+	 <dependency>
+	    <groupId>PayWayAPI</groupId>
+	    <artifactId>PayWayAPI</artifactId>
+	    <scope>system</scope>
+	    <version>1.0</version>
+	    <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/PayWayAPI.jar</systemPath>
+	  </dependency>
+	  
+	  <!-- http://mvnrepository.com/artifact/com.ganyo/gcm-server -->
+		<dependency>
+		    <groupId>com.ganyo</groupId>
+		    <artifactId>gcm-server</artifactId>
+		    <version>1.0.2</version>
+		</dependency>
+	<!-- http://mvnrepository.com/artifact/com.paypal.sdk/paypal-core -->
+<!-- 		<dependency>
+		    <groupId>com.paypal.sdk</groupId>
+		    <artifactId>paypal-core</artifactId>
+		    <version>1.7.0</version>
+		</dependency>
+ -->		  
+	 	<dependency>
+				<groupId>com.paypal.sdk</groupId>
+				<artifactId>rest-api-sdk</artifactId>
+				<version>1.9.2</version>
+		</dependency>
+			  <!-- http://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
+		<dependency>
+		    <groupId>com.itextpdf</groupId>
+		    <artifactId>itextpdf</artifactId>
+		    <version>5.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.9.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.mobile</groupId>
+		    <artifactId>spring-mobile-device</artifactId>
+		    <version>1.1.5.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>io.jsonwebtoken</groupId>
+		    <artifactId>jjwt</artifactId>
+		    <version>0.6.0</version>
+		</dependency>          
+		
+		
+		
+	</dependencies>
+  
+  <build>
+    <finalName>voyager</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

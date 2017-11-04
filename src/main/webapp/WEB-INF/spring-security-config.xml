@@ -1,0 +1,103 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd
+    ">
+    <global-method-security pre-post-annotations="enabled" /> 
+      
+    <!-- <http auto-config="true" pattern="/cseWeb**" authentication-manager-ref="deafultServiceImplAMDriver">
+        <access-denied-handler error-page="/403page" />  
+        
+        <intercept-url pattern="/cseWeb**" access="hasRole('DRIVER')" />
+        <form-login  login-page='/drlogin'
+                     username-parameter="email"
+                     password-parameter="password"
+                      
+                     authentication-success-handler-ref="customAuthenticationSuccessHandler"
+					 authentication-failure-url="/failure"
+					/>
+					
+					
+         <csrf disabled="true"/>
+    </http>
+     -->
+    <http auto-config="true" authentication-manager-ref="deafultServiceImplAM">
+        <access-denied-handler error-page="/403page" />  
+<!-- <intercept-url pattern="/api/**" />-->
+        <intercept-url pattern="/admin**" access="hasRole('ADMIN')" method="POST"/>
+        <intercept-url pattern="/corp**" access="hasRole('CORP')" />
+        <intercept-url pattern="/cseWeb**" access="hasRole('DRIVER')" />
+        <intercept-url pattern="/customer**" access="hasRole('CUSTOMER')" />
+        <form-login  login-page='/login'
+                     username-parameter="username"
+                     password-parameter="password"
+                      
+                     authentication-success-handler-ref="customAuthenticationSuccessHandler"
+					 authentication-failure-url="/failure"
+					/>
+										
+         <csrf disabled="true"/>
+    </http>
+
+   
+<!--    <http pattern="/api/signin" security="none"/>
+   <http pattern="/api/register/" security="none"/>
+   <http pattern="/api/register/customer" security="none"/>
+       
+	<http pattern="/api/**" entry-point-ref="restAuthenticationEntryPoint" create-session="stateless">
+        <csrf disabled="true"/> 
+        <custom-filter before="FORM_LOGIN_FILTER" ref="jwtAuthenticationFilter"/> 
+    </http>
+    
+    <beans:bean id="jwtAuthenticationFilter" class="com.cd.voyager.mobility.webservice.jwt.filter.JwtAuthenticationTokenFilter"> 
+    </beans:bean>
+ -->
+        
+<!--         
+	<http pattern="/api/login" security="none"/> 
+    <http pattern="/api/signup" security="none"/>
+
+    <http pattern="/api/**" entry-point-ref="restAuthenticationEntryPoint" create-session="stateless">
+        <csrf disabled="true"/>  
+        <custom-filter before="FORM_LOGIN_FILTER" ref="jwtAuthenticationFilter"/> 
+    </http>
+    
+    <beans:bean id="jwtAuthenticationFilter" class="com.cd.voyager.mobility.webservice.jwt.filter.JwtAuthenticationFilter">  
+        <beans:property name="authenticationManager" ref="authenticationManager" />
+        <beans:property name="authenticationSuccessHandler" ref="jwtAuthenticationSuccessHandler" />  
+    </beans:bean>
+
+    <authentication-manager alias="authenticationManager">
+        <authentication-provider ref="jwtAuthenticationProvider" />  
+    </authentication-manager>
+         -->
+        
+    <authentication-manager alias="deafultServiceImplAM" id="deafultServiceImplAM">
+        <authentication-provider user-service-ref="deafultServiceImpl"/>
+        <authentication-provider user-service-ref="driverDetailServiceImpl" >       
+        	<password-encoder hash="md5"></password-encoder>
+        </authentication-provider>
+    </authentication-manager>
+
+<!--     <authentication-manager alias="deafultServiceImplAMDriver" id="deafultServiceImplAMDriver">
+        <authentication-provider user-service-ref="driverDetailServiceImpl" />
+    </authentication-manager>
+ -->
+    <beans:bean id="deafultServiceImpl" class="com.cd.voyager.web.service.impl.DeafultServiceImpl" />
+    <beans:bean id="driverDetailServiceImpl" class="com.cd.voyager.web.service.impl.DriverDetailServiceImpl" />
+    <beans:bean id="customAuthenticationSuccessHandler" class="com.cd.voyager.web.controller.handler.CustomAuthenticationSuccessHandler" />
+      
+     <!-- <beans:bean id="jwtAuthenticationProvider" class="com.cd.voyager.mobility.webservice.jwt.JwtAuthenticationProvider" >
+     	<beans:property name="jwtUtil" ref="jwtUtil"/>
+     </beans:bean>
+ -->
+ 
+      <!-- 
+     <beans:bean id="jwtUtil" class="com.cd.voyager.mobility.webservice.jwt.JwtUtil" >
+     </beans:bean>
+      -->
+     
+      
+</beans:beans>

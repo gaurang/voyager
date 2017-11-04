@@ -1,0 +1,104 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:websocket="http://www.springframework.org/schema/websocket"
+	
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd 
+        http://www.springframework.org/schema/websocket
+        http://www.springframework.org/schema/websocket/spring-websocket.xsd">
+ 
+	<context:component-scan base-package="com.cd.voyager.web.controller,com.cd.voyager.mobility.webservice" />
+ 
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/WEB-INF/views/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean id="multipartResolver"
+    	class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	     <!-- setting maximum upload size -->
+	    <property name="maxUploadSize" value="5000000" />
+	</bean>   
+
+ 
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	    <bean id="messageSource"
+	        class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+	        <property name="basename" value="classpath:messages" />
+	        <property name="defaultEncoding" value="UTF-8" />
+    	</bean>
+ 
+    <bean id="localeResolver"
+        class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+        <property name="defaultLocale" value="en" />
+        <property name="cookieName" value="myAppLocaleCookie"></property>
+        <property name="cookieMaxAge" value="3600"></property>
+    </bean>
+ 
+    <mvc:interceptors>
+        <bean
+            class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <property name="paramName" value="locale" />
+        </bean>
+    </mvc:interceptors>
+ 	 
+	<mvc:annotation-driven />
+	<!--
+        Configure a handler adapter with a
+        BufferedImageHttpMessageConverter. This must be done manually
+        due to http://jira.springframework.org/browse/SPR-5975
+    -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <!--
+            NOTE: it is important to specify the order property, so this
+            adapter will be attempted before the HandlerAdapter that
+            Spring MVC automatically configures. This is because a
+            MappingJacksonHttpMessageConverter is registered
+            automatically with the default adapter that will attempt to
+            handle any Java object including BufferedImage.
+        -->
+        <property name="order" value="1" />
+        <property name="messageConverters">
+            <list>
+                <!-- Default converters -->
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter"/>
+                
+                <!-- Converter for images -->
+                <bean class="org.springframework.http.converter.BufferedImageHttpMessageConverter"/>
+                
+                <!-- This must come after our image converter -->
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+    
+<!--     <bean id="websocket" class="socket.WebsocketEndPoint" />
+
+ 	<websocket:handlers allowed-origins="*">
+	    <websocket:mapping path="/websocket" handler="websocket"  />
+	    <websocket:handshake-interceptors>
+	    	<bean class="socket.HandshakeInterceptor"/>
+	    </websocket:handshake-interceptors>
+	</websocket:handlers>
+ -->
+
+    <websocket:message-broker application-destination-prefix="/app">
+        <websocket:stomp-endpoint path="/portfolio" allowed-origins="*">
+            <!-- <websocket:sockjs/> -->
+        </websocket:stomp-endpoint>
+        <websocket:simple-broker prefix="/topic, /queue" />
+    </websocket:message-broker>
+	
+</beans>

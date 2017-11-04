@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/8132/gms-tag/trunk/src/com/vividlime/tag/exception
+END
+ServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/2830/gms-tag/trunk/src/com/vividlime/tag/exception/ServiceException.java
+END
+MailException.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/2830/gms-tag/trunk/src/com/vividlime/tag/exception/MailException.java
+END
+DaoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/!svn/ver/2830/gms-tag/trunk/src/com/vividlime/tag/exception/DaoException.java
+END
+RootException.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/2830/gms-tag/trunk/src/com/vividlime/tag/exception/RootException.java
+END
+MySQLErrorCodesTranslator.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/6100/gms-tag/trunk/src/com/vividlime/tag/exception/MySQLErrorCodesTranslator.java
+END
+ExceptionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/8132/gms-tag/trunk/src/com/vividlime/tag/exception/ExceptionHandler.java
+END
