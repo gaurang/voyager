@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>U-Conect</title>
+<title>Voyager</title>
 
 <spring:url value="${pageContext.request.contextPath}/../resources/core/css/hello.css" var="coreCss" />
 <spring:url value="${pageContext.request.contextPath}/../resources/core/css/bootstrap.min.css" var="bootstrapCss" />
@@ -37,7 +37,7 @@
 	<div class="container" align="center" style="width: 100%;">
 	
 	<div align="center" style="width: 100%; background-color: black;" >
-		<img src="${pageContext.request.contextPath}/resources/core/img/voyagerLogo.png" style="" width="422" height="222" align="middle" >
+		<img src="${pageContext.request.contextPath}/resources/core/img/logo.png" style="" width="422" height="222" align="middle" >
 	</div>
 		<h1>Login</h1>
 		

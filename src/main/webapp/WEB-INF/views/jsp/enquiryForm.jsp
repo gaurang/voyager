@@ -18,7 +18,7 @@
 		<link href="resources/core/css/jquery.steps.css" rel="stylesheet" type="text/css" /> 
 		</head>
 	<body class="bgImage">
-	<img alt="" class="bg" src="${pageContext.request.contextPath}/resources/core/img/UCBGBlank1.png" width="75%">
+	<img alt="" class="bg" src="${pageContext.request.contextPath}/resources/core/img/bgimg.png" width="75%">
 		<!-- <div class="centerLogo col-xd-6"> 
 		<div class="responsive-container">
 		    <div class="dummy"></div>

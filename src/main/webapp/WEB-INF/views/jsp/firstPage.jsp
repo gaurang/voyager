@@ -21,7 +21,7 @@
 	<nav class="navbar">
     <div class="container-fluid">
     <div class="navbar-header">
-    <img  class="img-responsive" src="${pageContext.request.contextPath}/resources/core/img/logo_no backgrnd.png" style="width:300px; height:120px; margin-top:20px;">
+    <img  class="img-responsive" src="${pageContext.request.contextPath}/resources/core/img/tran_logo.png" style="width:300px; height:120px; margin-top:20px;">
 	</div>
   <ul class=" nav navbar-nav navbar-right" style="margin-top:55px;">
 <li ><a href="regCrp"  role="button" style=" color: white; font-size:150%;" >Corporate Registration</a></li>

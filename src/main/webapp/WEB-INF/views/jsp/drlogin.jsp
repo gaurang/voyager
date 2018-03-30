@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>U-Conect</title>
+<title>Voyager</title>
 
 <spring:url value="/${pageContext.request.contextPath}/resources/core/css/hello.css" var="coreCss" />
 <spring:url value="/${pageContext.request.contextPath}/resources/core/css/bootstrap.min.css" var="bootstrapCss" />
