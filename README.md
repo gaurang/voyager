@@ -13,7 +13,7 @@ The platform contains features such as
 # Corporate Employee booking
 
 
-#Todo:-
+# Todo:-
 Bug Fixes
 Move UI to angular
 Pub-Sub for realtime updates
@@ -21,7 +21,7 @@ Payment Gateway integrations
 
 
 # It contains
- Rest API for Android booking
+ Rest API for Android booking \n
  Web interface for admin/costomer/driver
  Android app for Customer
  android app for Driver
