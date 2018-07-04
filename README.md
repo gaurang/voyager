@@ -13,27 +13,27 @@ The platform contains features such as
 # Corporate Employee booking
 
 
-Todo:-
+#Todo:-
 Bug Fixes
 Move UI to angular
 Pub-Sub for realtime updates
 Payment Gateway integrations
 
 
-It contains
-# Rest API for Android booking
-# Web interface for admin/costomer/driver
-# Android app for Customer
-# android app for Driver
+# It contains
+ Rest API for Android booking
+ Web interface for admin/costomer/driver
+ Android app for Customer
+ android app for Driver
 
 
 You can run and deploy this project
 It uses Mysql database, Spring Hibernate code base and native angular technology
 
-Steps:
-Install mysql DB from .sql scripts
-Make changes to messages.properties & hbm properties file to change config
-create war and deploy
+#Steps:
+Install mysql DB from .sql scripts.
+Make changes to messages.properties & hbm properties file to change config.
+create war and deploy.
 
 For android :
 change the url constant of android app to connect to rest service
