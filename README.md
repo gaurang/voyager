@@ -30,12 +30,12 @@ Payment Gateway integrations<br/>
 You can run and deploy this project
 It uses Mysql database, Spring Hibernate code base and native angular technology
 
-#Steps:
+# Steps:
 Install mysql DB from .sql scripts.<br/>
 Make changes to messages.properties & hbm properties file to change config.<br/>
 create war and deploy.<br/>
 
-For android :
+<u>For android</u> :<br/>
 change the url constant of android app to connect to rest service<br/>
 and build app<br/>
 
