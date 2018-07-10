@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="70dp"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:layout_width="201dp"
+        android:layout_height="31dp"
+        android:text="PICK BOOKING"
+        android:id="@+id/pick"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton"
+        android:textColor="#008496"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:typeface="sans"/>
+
+    <TextView
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:text="BROWSE TOPICS"
+        android:id="@+id/topics"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+    <Button
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:text="Using obstacles"
+        android:id="@+id/obstacle"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+    <View
+        android:layout_width="264dp"
+        android:layout_height="1dp"
+        android:background="#FCCF15"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:text="My account"
+        android:id="@+id/account"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+    <View
+        android:layout_width="264dp"
+        android:layout_height="1dp"
+        android:background="#FCCF15"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:text="Referral"
+        android:id="@+id/referral"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+    <View
+        android:layout_width="264dp"
+        android:layout_height="1dp"
+        android:background="#FCCF15"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+    <View
+        android:layout_width="264dp"
+        android:layout_height="1dp"
+        android:background="#FCCF15"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>

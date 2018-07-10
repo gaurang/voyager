@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="11"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:id="@+id/pic"
+            android:background="@drawable/drivers_pic"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passenger name"
+                android:id="@+id/detail"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_above="@+id/textView6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick up"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/textView6"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/detail"
+                android:layout_alignStart="@+id/detail" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick up time"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/textView6"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6C6C6C" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/map1"
+        android:orientation="vertical"
+        android:layout_weight="56"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_map"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/ic_play_circle_outline_white"
+                android:gravity="center"
+                android:minWidth="180dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text=" Set your Location "
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+            <Button
+                android:layout_width="143dp"
+                android:layout_height="26dp"
+                android:text="START"
+                android:id="@+id/start"
+                android:background="@drawable/start_icon"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center"
+                />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6C6C6C" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="18"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="17dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="@string/contact"
+                android:id="@+id/contact"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="@string/navigate"
+                android:id="@+id/navigate"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="17dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="@string/cancelride"
+                android:id="@+id/cancelride"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="@string/help"
+                android:id="@+id/help"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

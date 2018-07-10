@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/background">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="70dp"
+        android:layout_width="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Your Travel Cost Is:"
+        android:layout_marginTop="90dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/text" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:id="@+id/amount"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/experience"
+        android:text="Let us know your experience!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/important"
+        android:text="Your feedback is important!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <View
+            android:layout_width="270dp"
+            android:layout_height="2dp"
+            android:background="#FCCF15"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="10"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/Star1"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/stars2" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/Star2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stars2" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/Star3"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stars2" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/Star4"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stars2" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/Star5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stars2" />
+        </LinearLayout>
+        <View
+            android:layout_width="270dp"
+            android:layout_height="2dp"
+            android:background="#FCCF15"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thankyou"
+        android:text="THANK YOU!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:id="@+id/rate"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="10"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TELL US WHAT WENT WRONG"
+        android:id="@+id/problem"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#fdfafa"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_weight="3"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/comment"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:hint="Leave a comment"
+        android:textAlignment="center"
+        android:textColorHint="#B3B4B4"
+        android:textColor="#000303"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_weight="15"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:text="@string/submit"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton"
+        android:textColor="#008496"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_weight="10"/>
+    </LinearLayout>
+</LinearLayout>

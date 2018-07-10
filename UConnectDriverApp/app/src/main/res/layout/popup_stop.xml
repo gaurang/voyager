@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#444444"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter amount (Extra Charges)"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+    <EditText
+        android:id="@+id/extra"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="Amount"
+        android:textAlignment="center"
+        android:textColorHint="#B3B4B4"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="@dimen/text_size_12"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter amount (Toll)"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="@dimen/size_5dp"/>
+    <EditText
+        android:id="@+id/toll"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="Amount"
+        android:textAlignment="center"
+        android:textColorHint="#B3B4B4"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="@dimen/text_size_12"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/submit"
+            android:id="@+id/tollsubmit"
+            android:background="@drawable/roundbutton"
+            android:textColor="#008496" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

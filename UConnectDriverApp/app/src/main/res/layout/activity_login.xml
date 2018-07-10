@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="69dp"
+        android:layout_width="match_parent"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="33dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/edt_emailid"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:hint="@string/emailid"
+        android:textAlignment="center"
+        android:textColor="#000303"
+        android:layout_marginTop="150dp"
+        android:textColorHint="#B3B4B4"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:id="@+id/edt_password"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:hint="@string/password"
+        android:gravity="center"
+        android:textColorHint="#B3B4B4"
+        android:textAlignment="center"
+        android:textColor="#000303"
+        android:layout_marginTop="@dimen/text_size_20"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW PASSSWORD"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:id="@+id/show" />
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:text="@string/signin"
+        android:id="@+id/login"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton"
+        android:textColor="#008496"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:text="@string/forgotpassword"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/text_size_10"
+        android:textColor="#fefefe"
+        android:id="@+id/forgotpassword"
+        android:gravity="center"/>
+
+
+</LinearLayout>

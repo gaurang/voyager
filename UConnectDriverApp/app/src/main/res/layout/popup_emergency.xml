@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#444444"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="CONTINUE TO SEND ALERTS?"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <Button
+
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="@string/confirm"
+            android:id="@+id/confirm"
+            android:background="@drawable/roundbutton"
+            android:textColor="#008496"
+            android:layout_marginLeft="40dp" />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:text="@string/cancel"
+            android:id="@+id/cancel1"
+            android:background="@drawable/roundbutton"
+            android:textColor="#008496"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
