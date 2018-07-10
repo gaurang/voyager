@@ -1,0 +1,50 @@
+ Handler GetDetails_Handler = new Handler() {
+        public void handleMessage(Message msg) {
+            System.out.println(msg.getData().toString());
+
+            if (msg.getData().getBoolean("flag")) {
+                if (msg.getData().getInt("code") == SUCCESS) {
+                    swipeLayout_zingfrnd.setRefreshing(false);
+                    try {
+                        JSONObject jsonObject = new JSONObject(msg.getData().getString("responce"));
+                        JSONObject jsonObject_1 = new JSONObject(jsonObject.getString("data"));
+                        JSONArray users = (jsonObject_1.getJSONArray("friends"));
+                        for (int i = 0; i < users.length(); i++) {
+                            JSONObject jsonObject1 = users.getJSONObject(i);
+                            FriendDetails userDetails = new FriendDetails();
+                            userDetails.active = 0;
+                            userDetails.user_id = jsonObject1.getInt("user_id");
+                            userDetails.first_name = jsonObject1.getString("first_name");
+                            userDetails.last_name = jsonObject1.getString("last_name");
+                            userDetails.image = jsonObject1.getString("image");
+                            FriendList.add(userDetails);
+                            FilterFriendList.add(userDetails);
+                        }
+
+                        addFriendAdapter.notifyDataSetChanged();
+                        addFriendAdapter = new GetFriendsIdsAdapter(FriendList, GetFriendIdsActivity.this);
+                        mrecycler_score.setAdapter(addFriendAdapter);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                } else if (msg.getData().getInt("code") == FROMGENERATETOKEN) {
+                    parentactivity.ParseSessionDetails(msg.getData().getString("responce"));
+                    CallSyncFriends();
+                } else if (msg.getData().getInt("code") == SESSIONEXPIRE) {
+                    if (Util.isNetworkConnected(parentactivity)) {
+                        parentactivity.CallSessionID(GetDetails_Handler, msg.getData()
+                                .getString("mExtraParam"));
+                    } else {
+                        swipeLayout_zingfrnd.setRefreshing(false);
+                        Util.ShowToast(parentactivity, getString(R.string.nointernetmessage), Toast.LENGTH_SHORT);
+                    }
+                } else {
+                    swipeLayout_zingfrnd.setRefreshing(false);
+                    Util.ShowToast(parentactivity, getString(R.string.commonalertmessage), Toast.LENGTH_SHORT);
+                }
+            } else {
+                swipeLayout_zingfrnd.setRefreshing(false);
+                Util.ShowToast(parentactivity, getString(R.string.commonalertmessage), Toast.LENGTH_SHORT);
+            }
+        }
+    };

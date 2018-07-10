@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="11"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="18"
+        android:weightSum="100" >
+        <TextView
+            android:id="@+id/tv_login_fb"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:elevation="5dip"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:text="Facebook"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_16"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/ic_search_mainpage"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:elevation="5dip"
+            android:singleLine="true"
+            android:background="@color/white"
+            android:text="Facebook"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_16"
+            android:layout_weight="50"
+            android:drawableLeft="@drawable/ic_search_mainpage"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6C6C6C" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/map1"
+        android:orientation="vertical"
+        android:layout_weight="56"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_map"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/ic_play_circle_outline_white"
+                android:gravity="center"
+                android:minWidth="180dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text=" Set your Location "
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_marker" />
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6C6C6C" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="18"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="17dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="call driver"
+                android:id="@+id/contact"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="@string/cancelride"
+                android:id="@+id/cancelride"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="17dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="send status"
+                android:id="@+id/status"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="help"
+                android:id="@+id/help"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

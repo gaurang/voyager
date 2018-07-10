@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    tools:context="com.app.voyager.SplashScreenActivity"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top|center"
+        android:layout_weight="1.03"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:id="@+id/button7"
+            android:layout_weight="0.31" />
+
+        <LinearLayout
+            android:background="@drawable/textfield"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="215dp"
+                android:layout_height="66dp"
+                android:gravity="left|center">
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mini"
+                    android:id="@+id/taxiname"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="177dp"
+                    android:layout_height="wrap_content"
+                    android:text="TEM123456"
+                    android:id="@+id/ridenumber"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <TextView
+                android:paddingRight="10dp"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:text="Completed"
+                android:id="@+id/statusofride"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="22dp"
+                android:gravity="center|right" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+        <LinearLayout
+            android:background="@drawable/textfield"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="2"
+            android:gravity="center|top"
+            android:layout_weight="0.16">
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:text="Senapati bapat road,mumbai-400008"
+                android:id="@+id/from"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_language_country"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="367dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Senapati bapat road,mumbai-400008"
+                android:layout_marginTop="0dp"
+                android:id="@+id/to"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_language_country"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="center" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="370dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="20-Jan-2016 3:30PM"
+                android:layout_weight="0.74"
+                android:id="@+id/time"
+                android:drawableLeft="@drawable/ic_language_country"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.49"
+            android:background="@drawable/textfield"
+            android:weightSum="4"
+            android:gravity="bottom|center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usecoupon"
+                    android:background="@drawable/textfield"
+                    android:drawableTop="@drawable/cancel_24"
+                    android:id="@+id/usecoupon"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mailinvoice"
+                    android:drawableTop="@drawable/cancel_24"
+                    android:background="@drawable/textfield"
+                    android:id="@+id/mailinvoice"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support"
+                    android:drawableTop="@drawable/cancel_24"
+                    android:background="@drawable/textfield"
+                    android:id="@+id/support"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelride"
+                    android:drawableTop="@drawable/cancel_24"
+                    android:background="@drawable/textfield"
+                    android:id="@+id/canecel"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

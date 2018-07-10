@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomlayout"
+        android:fillViewport="false"
+        android:padding="10dip"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rate_card" />
+
+                <TextView
+                    android:id="@+id/ratecaerd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dip"
+
+                    android:background="@drawable/selector_btn"
+                    android:drawablePadding="5dip"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="5dip"
+                    android:text="RATE CARD"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ride_estimate" />
+
+
+                <TextView
+                    android:id="@+id/rideestimate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/selector_btn"
+                    android:drawablePadding="5dip"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="5dip"
+                    android:text="RIDE ESTIMATE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/promo_code" />
+
+
+                <TextView
+                    android:id="@+id/promocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/selector_btn"
+                    android:drawablePadding="5dip"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="5dip"
+                    android:text="PROMO CODE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/business_personal" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/selector_btn">
+
+                    <TextView
+                        android:id="@+id/profilepaymentselction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dip"
+                        android:gravity="center"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:text="Select Profile"
+                        android:textColor="@color/black"
+                        android:drawableRight="@drawable/down_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/payment_method" />
+
+
+                <TextView
+                    android:id="@+id/cardpaymnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:layout_margin="10dip"
+                    android:background="@drawable/selector_btn"
+                    android:drawablePadding="5dip"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="Select Payment"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/down_arrow"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_left_unselected_inner"
+            android:elevation="5dip"
+            android:singleLine="true"
+            android:text="CANCEL"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_right_unselected_inner"
+            android:elevation="5dip"
+            android:singleLine="true"
+            android:text="CONFIRM"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

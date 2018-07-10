@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/book_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/booknow_btn"
+
+                android:drawablePadding="5dip"
+                android:gravity="center"
+                android:minWidth="180dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="BOOK"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/book_later"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_map"
+                android:drawableLeft="@drawable/ic_play_circle_outline_white"
+                android:drawablePadding="5dip"
+                android:gravity="center"
+                android:minWidth="180dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="SCHEDULE"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FCCF15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_bg_color">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:id="@+id/cartypemainlayoput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+
+                <LinearLayout
+                        android:id="@+id/horizon_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/service_maintype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+        </LinearLayout>
+      </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

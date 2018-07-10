@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/bg_app">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEFAULT"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/business"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/txtedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="EDIT"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lllayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSINESS"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:id="@+id/def"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_20"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <EditText
+
+            android:id="@+id/edtBusinessEmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="Email ID"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:inputType="textWebEmailAddress"
+            android:textColorHint="#B3B4B4"
+            android:textSize="15sp"
+            android:enabled="false"
+            android:layout_marginTop="@dimen/text_size_10"/>
+        <TextView
+            android:id="@+id/edtBusinessPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext"
+            android:hint="Payment"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textWebEmailAddress"
+            android:textColorHint="#B3B4B4"
+            android:textSize="15sp"
+            android:enabled="false"/>
+
+
+             <View
+                 android:layout_marginTop="30dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="2dp"
+                 android:background="#FCCF15"
+                 />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_marginTop="@dimen/text_size_10">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEFAULT"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/personal"
+            android:checked="false" />
+
+</RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERSONAL"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:id="@+id/def1"
+            android:textSize="@dimen/text_size_20"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <EditText
+                android:id="@+id/edtPersonalEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Email ID"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textWebEmailAddress"
+                android:textColorHint="#B3B4B4"
+                android:textSize="15sp"
+                android:enabled="false"/>
+            <TextView
+                android:id="@+id/edtPersonalPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:hint="Payment"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textWebEmailAddress"
+                android:textColorHint="#B3B4B4"
+                android:textSize="15sp"
+                android:enabled="false"/>
+
+  </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:layout_width="280dp"
+        android:layout_height="38dp"
+        android:text="SAVE"
+        android:id="@+id/btnSave"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton"
+        android:textColor="#008496"
+        android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

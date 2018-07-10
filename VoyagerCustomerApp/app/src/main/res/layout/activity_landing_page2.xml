@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lycontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginLeft="-10dip"
+                    android:background="@color/colorPrimary"
+                    android:elevation="5dip"
+                    android:paddingTop="5dip">
+
+                    <ImageView
+                        android:id="@+id/iv_menu"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="left"
+                        android:layout_marginRight="10dip"
+
+
+                        android:scaleType="center"
+                        android:src="@drawable/menu_icon" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="center"
+                        android:scaleType="center"   />
+
+                        //android:src="@drawable/landing_header_logo"
+
+
+
+                </android.support.v7.widget.Toolbar>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/header_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/header"
+                >
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="com.app.voyager.LandingPageActivity2"
+                    tools:showIn="@layout/app_bar_landing_page2"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <fragment
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.MapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:id="@+id/locationMarker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/locationMarkertext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded_corner_map"
+                                android:drawablePadding="5dip"
+                                android:drawableRight="@drawable/ic_play_circle_outline_white"
+                                android:gravity="center"
+                                android:minWidth="180dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="5dp"
+                                android:text=" Set your Location "
+                                android:textColor="@android:color/white"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_marker" />
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fragmentcontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/card_view_destinatio"></FrameLayout>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_source"
+                        android:layout_width="fill_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="top"
+                        android:elevation="5dip"
+                        card_view:cardBackgroundColor="@android:color/white"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="0dp"
+                        card_view:contentPadding="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dip"
+                                android:layout_height="50dip"
+                                android:layout_gravity="center"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_edit_location" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Selected Location"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="@color/white"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/adressText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:hint="Enter your location"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/text_size_16" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_destinatio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_view_source"
+                        android:layout_gravity="top"
+
+                        android:elevation="5dip"
+                        card_view:cardBackgroundColor="@color/white"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="0dp"
+                        card_view:contentPadding="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dip"
+                                android:layout_height="50dip"
+                                android:layout_gravity="center"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_edit_location" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dip"
+                                android:layout_weight="1"
+                                android:background="@android:color/white"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/textView1_destination"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:layout_marginLeft="10dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:hint="Enter your destination"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/text_size_16" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/drawerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|start"
+            android:background="@drawable/bg_app"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/drawer_layout" />
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

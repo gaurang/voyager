@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/car_normalt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="@string/personal"
+                android:textSize="22dp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/edt_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputbox_height"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/white_btn"
+            android:elevation="5dip"
+            android:hint="@string/emailid"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="@color/light_black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <Button
+            android:id="@+id/default_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:text="@string/payment"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="0.1dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/selector_btn"
+            android:elevation="5dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/submit"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="When you ride using this profile, this preferences will selected by default."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

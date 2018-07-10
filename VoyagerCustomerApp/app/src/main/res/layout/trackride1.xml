@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="100">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="11"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="#6C6C6C"
+        android:weightSum="1"
+        android:id="@+id/onlinemeter1"
+        android:layout_weight="15">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/meter"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/onlinemeter" />
+
+        <TextView
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="Online Meter"
+            android:id="@+id/onlinemeter"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/map1"
+        android:orientation="vertical"
+        android:layout_weight="56"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_map"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/ic_play_circle_outline_white"
+                android:gravity="center"
+                android:minWidth="180dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text=" Set your Location "
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_marker" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/emergency_icon2"
+            android:layout_gravity="top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6C6C6C" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="18"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="17dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="contact"
+                android:id="@+id/contact"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="navigate"
+                android:id="@+id/navigate"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="17dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="@string/cancelride"
+                android:id="@+id/cancelride"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:text="help"
+                android:id="@+id/help"
+                android:background="@drawable/roundbutton"
+                android:textColor="#008496"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

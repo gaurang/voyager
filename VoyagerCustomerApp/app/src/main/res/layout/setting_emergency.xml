@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:weightSum="1">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/addcontact"
+        android:foregroundGravity="center"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/messagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.14"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="116dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LET'S MAKE TRAVEL SAFER!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/emergency_icon1"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Incase of emergency, let your closed ones\ntrack your ride details or you can send them alerts"
+        android:id="@+id/textView9"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="YOU CAN ADD UPTO TWO CONTACT"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+        </LinearLayout>
+
+    <Button
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:id="@+id/addcontact"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton"
+        android:textColor="#008496"
+        android:layout_weight="0.09"
+        android:text="ADD CONTACT"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

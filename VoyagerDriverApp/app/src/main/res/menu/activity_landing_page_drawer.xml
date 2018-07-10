@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="PROFILE" />
+            <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="TRIP HISTORY" />
+            <item
+                android:id="@+id/nav_earnings"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="EARNINGS" />
+
+            <item
+                android:id="@+id/nav_inviteafriend"
+                android:icon="@drawable/ic_menu_share"
+                android:title="INVITE A FRIEND" />
+            <item
+                android:id="@+id/nav_documents"
+                android:icon="@drawable/ic_menu_send"
+                android:title="DOCUMENTS" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="HELP" />
+
+</group>
+
+</menu>

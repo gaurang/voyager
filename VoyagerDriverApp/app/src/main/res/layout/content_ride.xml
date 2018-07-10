@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.brij.driverrating.ride"
+    tools:showIn="@layout/activity_ride"
+    android:layout_weight="100">
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:layout_weight="40">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#038891"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR RATING | *****"
+                android:textColor="#ffffff" />
+            <ImageView
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drivers_pic"
+                app:layout_anchor="@id/app_bar"
+                app:layout_anchorGravity="bottom|center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAR MODEL | Mh1234"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Name of driver"
+            android:textColor="#ffffff"
+            android:id="@+id/name" />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="#FCCF15" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="BOOKING FEES"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="BASE FARE"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="5 MILES"
+                    android:textColor="#ffffff"
+                    android:id="@+id/miles1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="20MINUTES"
+                    android:textColor="#ffffff"
+                    android:id="@+id/time1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="PROMO CODE"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="TOLL"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="#FCCF15" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="1234"
+                    android:textColor="#ffffff"
+                    android:id="@+id/booking" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="134"
+                    android:textColor="#ffffff"
+                    android:id="@+id/base" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="136"
+                    android:textColor="#ffffff"
+                    android:id="@+id/miles" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="136"
+                    android:textColor="#ffffff"
+                    android:id="@+id/minutes" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="1543"
+                    android:textColor="#ffffff"
+                    android:id="@+id/code" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="153"
+                    android:textColor="#ffffff"
+                    android:id="@+id/toll" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="#FCCF15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="PERSONAL/BUSINESS"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text="5.45"
+                android:textColor="#ffffff"
+                android:id="@+id/total" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="#FCCF15" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="171dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbutton"
+            android:text="HELP"
+            android:textColor="#008496" />
+    </LinearLayout>
+</android.support.design.widget.CollapsingToolbarLayout>
+</LinearLayout>

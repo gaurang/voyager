@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.brij.driverrating.ride"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/background"
+    android:layout_gravity="center">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="33"
+        android:id="@+id/map"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/map1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_weight="60"
+        android:id="@+id/linear"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_weight="26"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="YOUR RATING | 4.0*"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/rating" />
+
+            <ImageView
+                android:id="@+id/fab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_anchor="@id/app_bar"
+                app:layout_anchorGravity="bottom|center"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CAR MODEL | Mh1234"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/car"
+                android:layout_weight="0.3"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Name of driver"
+            android:textColor="#ffffff"
+            android:id="@+id/name"
+            android:layout_weight="7"/>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="#FCCF15"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="50"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="49">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="BOOKING FEES"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="BASE FARE"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="5 MILES"
+                    android:textColor="#ffffff"
+                    android:id="@+id/miles1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="20MINUTES"
+                    android:textColor="#ffffff"
+                    android:id="@+id/time1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="PROMO CODE"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="TOLL"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:background="#FCCF15"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="49"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="1234"
+                    android:textColor="#ffffff"
+                    android:id="@+id/booking" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="134"
+                    android:textColor="#ffffff"
+                    android:id="@+id/base" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="136"
+                    android:textColor="#ffffff"
+                    android:id="@+id/miles" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="136"
+                    android:textColor="#ffffff"
+                    android:id="@+id/minutes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="1543"
+                    android:textColor="#ffffff"
+                    android:id="@+id/code" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:singleLine="true"
+                    android:text="153"
+                    android:textColor="#ffffff"
+                    android:id="@+id/toll" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="#FCCF15"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PERSONAL/BUSINESS"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:id="@+id/type"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="5.45"
+                android:textColor="#ffffff"
+                android:id="@+id/total"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:background="#FCCF15"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/roundbutton"
+            android:text="HELP"
+            android:textColor="#008496"
+            android:layout_weight="8"/>
+    </LinearLayout>
+</LinearLayout>

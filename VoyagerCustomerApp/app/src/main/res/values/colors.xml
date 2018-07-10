@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#038891</color>
+    <color name="colorPrimaryDark">#28947e</color>
+    <color name="colorAccent">#fccf15</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#4c4c4c</color>
+    <color name="gray">#ababab</color>
+    <color name="lightred">#d0422a</color>
+    <color name="lightred_hover">#D02E10</color>
+    <color name="honeycombish_blue">#3ac7aa</color>
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <item name="bottom_bg_color" type="color">#57696a</item>
+    <item name="yellow" type="color">#fccf15</item>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="69dp"
+        android:layout_width="match_parent"/>
+
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="33dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:hint="Enter password"
+        android:textAlignment="center"
+        android:textColor="#000303"
+        android:layout_marginTop="150dp"
+        android:textColorHint="#B3B4B4"/>
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="33dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/re_enterpassword"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        android:hint="Re-enter password"
+        android:textAlignment="center"
+        android:textColor="#000303"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#B3B4B4"/>
+
+
+        <Button
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:text="VERIFY"
+        android:id="@+id/verify"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundbutton"
+        android:textColor="#008496"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

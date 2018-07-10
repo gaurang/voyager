@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_promo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputbox_height"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/white_btn"
+            android:elevation="5dip"
+            android:hint="@string/promocode"
+            android:inputType="textEmailAddress"
+            android:maxLength="15"
+            android:padding="5dip"
+            android:singleLine="true"
+            android:textColor="@color/light_black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#2bbb9e"
+            android:text="@string/apply"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+</LinearLayout>

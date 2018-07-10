@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+
+        android:orientation="vertical"
+        android:padding="5dip">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/ic_delete"
+                    android:layout_toRightOf="@+id/userpic"
+                    android:layout_toStartOf="@+id/ic_delete"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:gravity="right"
+                        android:text="11 Jan 2015"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_16"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ic_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:minHeight="50dip"
+                    android:minWidth="50dip"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_delete_contact" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ic_delete"
+                    android:layout_toStartOf="@+id/ic_delete"
+                    android:drawableLeft="@drawable/card_icon"
+                    android:drawablePadding="10dip"
+                    android:text="New Text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/yellow" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

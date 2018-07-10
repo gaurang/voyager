@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    tools:context="com.app.voyager.SplashScreenActivity"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="561dp"
+        android:padding="5dip">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:layout_marginTop="-13dp"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:text="Map"
+            android:id="@+id/button11" />
+
+        <LinearLayout
+            android:layout_marginTop="-3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="2"
+            android:background="#ffffff">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Date and time"
+                    android:layout_weight="1"
+                    android:id="@+id/textView10"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Amount"
+                    android:layout_weight="1"
+                    android:id="@+id/textView11"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/textView12"
+                    android:drawableLeft="@drawable/cancel_24"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="-3dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/billingissue"
+            android:id="@+id/billingissue"
+            android:paddingLeft="50dp"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+        <Button
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/driverrelatedissue"
+            android:id="@+id/driverrelatedissue"
+            android:paddingLeft="50dp"
+            android:layout_weight="0.06"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+
+        <Button
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/ridedelay"
+            android:id="@+id/ridedelayed"
+            android:paddingLeft="50dp"
+            android:layout_weight="0.06"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+
+        <Button
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/cabquality"
+            android:id="@+id/cabquality"
+            android:paddingLeft="50dp"
+            android:layout_weight="0.06"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+
+        <Button
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/leftbelonging"
+            android:id="@+id/leftbelonging"
+            android:paddingLeft="50dp"
+            android:layout_weight="0.06"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+
+        <Button
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/accidentduring"
+            android:id="@+id/accidentduring"
+            android:paddingLeft="50dp"
+            android:layout_weight="0.06"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+
+        <Button
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/otherhelptopic"
+            android:id="@+id/otherhelptopic"
+            android:paddingLeft="50dp"
+            android:layout_weight="0.06"
+            android:textSize="20dp"
+            android:gravity="left|center" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

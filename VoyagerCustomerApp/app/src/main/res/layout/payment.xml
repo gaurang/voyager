@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context="com.app.voyager.SplashScreenActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paymethodtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="SELECT PAYMENT METHOD"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/btn_paybycard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/personal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.61"
+                    android:background="#00ffffff"
+                    android:drawableLeft="@drawable/payment"
+                    android:drawablePadding="10dip"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="20dp"
+                    android:text="Personal"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/corporate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.30"
+                    android:background="#00ffffff"
+                    android:drawableLeft="@drawable/corporate"
+                    android:drawablePadding="10dip"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="20dp"
+                    android:text="corporate"
+
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="left"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/wallete_paynment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.32"
+                    android:background="#00ffffff"
+                    android:drawableLeft="@drawable/wallet"
+                    android:drawablePadding="10dip"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="20dp"
+                    android:text="Wallet"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:layout_marginRight="0.1dip"
+                android:background="@drawable/roundbutton"
+                android:elevation="5dip"
+                android:singleLine="true"
+                android:text="Skip"
+                android:textColor="@color/light_black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dip"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/agreetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/agreetoour"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/termsandconditoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/agreetoour2"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</RelativeLayout>

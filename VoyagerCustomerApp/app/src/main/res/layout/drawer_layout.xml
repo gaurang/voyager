@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_payment"
+                android:text="PAYMENT"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_history"
+                android:text="HISTORY"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_freeride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_freerides"
+                android:text="FREE RIDES"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_promotion"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_promotions"
+                android:text="PROMOTIONS"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_notifications"
+                android:text="NOTIFICATIONS"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_help"
+                android:text="HELP"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_settings"
+                android:text="SETTINGS"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+
+            <Button
+                android:padding="10dp"
+                android:id="@+id/nav_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_default"
+                android:drawablePadding="5dip"
+                android:drawableTop="@drawable/nav_about"
+                android:text="ABOUT"
+                android:textColor="@color/bottom_bg_color"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context="com.app.voyager.SplashScreenActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="7"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/CorpoIdtextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CORPORATE ID"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginTop="110dp"/>
+
+            <EditText
+
+                android:id="@+id/edt_corpoid"
+                android:layout_width="320dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edittext"
+                android:hint="Email Id"
+                android:paddingLeft="15dp"
+                android:shadowRadius="14"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+            <EditText
+
+                android:id="@+id/edt_pin"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext"
+                android:hint="Pin Number"
+                android:paddingLeft="15dp"
+                android:shadowRadius="14"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+</LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnAddPayment"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0.1dip"
+                android:background="@drawable/selector_btn"
+                android:elevation="5dip"
+                android:singleLine="true"
+                android:text="VALIDATE"
+                android:textColor="@color/light_black"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:weightSum="2"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/agreetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/agreetoour"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/termsandconditoin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/agreetoour2"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

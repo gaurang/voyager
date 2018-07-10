@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/option1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/text_size_20">
+
+        <TextView
+            android:id="@+id/tv_timeduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dip"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_8" />
+
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/taxi1"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/tv_cartype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dip"
+            android:gravity="center"
+            android:text="MINI"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_8" />
+    </LinearLayout>
+</RelativeLayout>

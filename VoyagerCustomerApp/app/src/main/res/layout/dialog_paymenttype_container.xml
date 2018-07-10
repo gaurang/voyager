@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radio0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:button="@drawable/card_icon"
+    android:drawablePadding="10dp"
+    android:drawableRight="@drawable/radiobutton_selector"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="Buisness"
+    android:textColor="@drawable/radiobtn_textselector"
+    android:textSize="@dimen/text_size_22" />
+
+

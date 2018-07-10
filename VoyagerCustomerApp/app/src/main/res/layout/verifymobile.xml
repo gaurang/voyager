@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/verifytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="@string/verifytext"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/enterverificode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/enterverificode"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/editText_otp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputbox_height"
+            android:layout_margin="10dp"
+            android:background="@drawable/white_btn"
+            android:gravity="center"
+            android:hint="Enter otp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:id="@+id/callstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/callstring"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/btn_resend"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/selector_btn"
+            android:elevation="5dip"
+            android:singleLine="true"
+            android:text="@string/resendotp"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:id="@+id/btn_verify"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/selector_btn"
+            android:elevation="5dip"
+            android:singleLine="true"
+            android:text="@string/verify"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/text_size_16" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

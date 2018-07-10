@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+
+    <style name="dialog_animation">
+        <item name="@android:windowEnterAnimation">@anim/abc_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/abc_fade_out</item>
+    </style>
+
+    <style name="alertdialog_animation">
+        <item name="@android:windowEnterAnimation">@anim/abc_fade_in</item>
+        <item name="@android:windowExitAnimation">@anim/abc_fade_out</item>
+    </style>
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:windowTitleStyle">@style/TitleDialogTextStyle</item>
+    </style>
+
+    <style name="TitleDialogTextStyle" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/abc_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/abc_fade_out</item>
+    </style>
+
+    <style name="Progressdialogthem" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/add_marker</item>
+        <item name="android:dropDownAnchor">@drawable/add_marker</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+</resources>

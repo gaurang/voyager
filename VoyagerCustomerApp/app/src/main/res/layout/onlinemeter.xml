@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#008496"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Online Meter"
+            android:id="@+id/textView6"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:drawableTop="@drawable/onlinemeter"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_weight="95"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXTRAS"
+        android:id="@+id/extras"
+        android:drawableTop="@drawable/extras"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="26dp"
+       />
+
+    TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Extras"
+        android:id="@+id/extraText"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/extras"
+        android:layout_alignLeft="@+id/extras"
+        android:layout_alignStart="@+id/extras"
+        android:layout_alignRight="@+id/extras"
+        android:layout_alignEnd="@+id/extras" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKING FEE"
+        android:id="@+id/bookingFee"
+        android:drawableTop="@drawable/booking_fee"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/extras"
+        android:layout_toLeftOf="@+id/runningText"
+        android:layout_toStartOf="@+id/runningText" />
+
+    TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Booking fee"
+        android:id="@+id/bookingText"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:layout_below="@+id/bookingFee"
+        android:layout_toLeftOf="@+id/runningText"
+        android:layout_toStartOf="@+id/runningText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAVEL TIME"
+        android:id="@+id/travelTime"
+        android:layout_gravity="right"
+        android:drawableTop="@drawable/travel_time"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginEnd="13dp"/>
+
+    TextView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Travel time"
+        android:id="@+id/travelText"
+        android:textColor="#ffffffff"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:layout_below="@+id/travelTime"
+        android:layout_alignRight="@+id/extraText"
+        android:layout_alignEnd="@+id/extraText"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/runningText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RUNNING METER"
+        android:id="@+id/textView7"
+        android:drawableTop="@drawable/running_meter"
+        android:layout_above="@+id/runningText"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="#ffffff"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FCCF15"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

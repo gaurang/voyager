@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD FAVORITES"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+<android.support.v7.widget.CardView
+    android:layout_margin="15dp"
+    android:background="@drawable/cart_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#CCFFFFFF">
+    <LinearLayout
+        android:id="@+id/llhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:text="@string/Home"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/home"
+            android:drawableLeft="@drawable/ic_home_black_18dp"
+            android:layout_weight="1.60" />
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:id="@+id/textView1_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Select address"
+            android:minHeight="@dimen/toolbar_height"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/cart_bg"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#CCFFFFFF">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/llWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_account_balance_black_18dp"
+            android:drawablePadding="20dp"
+            android:text="@string/office"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/office" />
+
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:id="@+id/textView1_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Select address"
+            android:minHeight="@dimen/toolbar_height"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>
+

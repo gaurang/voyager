@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/onlineccpayment"
+            android:title="PAYMENT" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="HISTORY" />
+        <item
+            android:id="@+id/nav_freeride"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="FREE RIDE" />
+
+        <item
+            android:id="@+id/nav_promotion"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="PROMOTION" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_menu_share"
+            android:title="NOTIFICATION" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_menu_send"
+            android:title="HELP" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_send"
+            android:title="SETTINGS" />
+    </group>
+
+
+
+</menu>

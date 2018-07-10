@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/toolbar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:orientation="vertical"
+
+            android:padding="5dip">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/Home"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold"
+                android:id="@+id/home" />
+
+            <TextView
+                android:id="@+id/textView1_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="Select address"
+                android:minHeight="@dimen/toolbar_height"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textfield"
+            android:orientation="vertical"
+            android:padding="5dip">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/office"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold"
+                android:id="@+id/office" />
+
+            <TextView
+                android:id="@+id/textView1_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield"
+                android:gravity="center_vertical"
+                android:hint="Select address"
+                android:minHeight="@dimen/toolbar_height"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.18"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

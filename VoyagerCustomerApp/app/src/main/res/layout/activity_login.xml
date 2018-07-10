@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+
+    android:orientation="vertical"
+    tools:context="com.app.voyager.SplashScreenActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:id="@+id/scrollView3"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            tools:context="com.app.voyager.SplashScreenActivity">
+
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tv_login_fb"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_fblogin"
+                            android:elevation="5dip"
+                            android:singleLine="true"
+                            android:src="@drawable/facebook_icon"
+                            android:text="Facebook"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <ImageView
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/tv_login_googleplus"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_googlelogin"
+                            android:elevation="5dip"
+                            android:singleLine="true"
+                            android:src="@drawable/googleplus"
+                            android:text="Google Plus"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/text_size_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dip"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dip"
+                            android:layout_weight="0.28"
+                            android:background="@color/white"
+                            android:padding="5dip" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.44"
+                            android:gravity="center"
+                            android:minWidth="50dip"
+                            android:text="OR"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_20"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dip"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dip"
+                            android:layout_weight="0.28"
+                            android:background="@color/white"
+                            android:padding="5dip" />
+                    </LinearLayout>
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                    <EditText
+
+                        android:id="@+id/edt_emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/inputbox_height"
+                        android:background="@drawable/white_btn"
+                        android:hint="@string/emailid"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:padding="10dip"
+                        android:singleLine="true"
+                        android:textColor="@color/light_black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/inputbox_height"
+                        android:background="@drawable/white_btn"
+                        android:elevation="5dip"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:maxLength="50"
+                        android:padding="10dip"
+                        android:singleLine="true"
+                        android:textColor="@color/light_black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/text_size_16" />
+
+
+</LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="@dimen/btn_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.1dip"
+                    android:background="@drawable/selector_btn"
+                    android:elevation="5dip"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/signin"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/forgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dip"
+                    android:singleLine="true"
+                    android:text="@string/forgotpassword"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

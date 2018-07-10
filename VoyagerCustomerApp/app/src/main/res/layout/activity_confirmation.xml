@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/toolbar2" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="371dp"
+            android:background="#fe8181">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:background="#00ffffff"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="New Text cxzczxc czxcz "
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:drawableLeft="@drawable/ic_language_country"
+                    android:drawableRight="@drawable/com_facebook_tooltip_black_xout"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/textView3"
+                    android:background="@drawable/textfield"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#d9d8d8"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/business"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.1dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="Business"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Button
+                    android:id="@+id/visa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.1dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="****4567"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:layout_height="40dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/ratecard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.1dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="Rate Card"
+                    android:textColor="@color/light_black"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#FFA3A3A3" />
+
+                <Button
+                    android:id="@+id/rideestimate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.1dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="Ride Estimate"
+                    android:textColor="@color/light_black"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#FFA3A3A3" />
+
+                <Button
+                    android:id="@+id/promocode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.1dip"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="Promo Code"
+                    android:textColor="@color/light_black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#bababa"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0.1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="Cancel"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0.1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn"
+                    android:elevation="5dip"
+                    android:singleLine="true"
+                    android:text="Confirm"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

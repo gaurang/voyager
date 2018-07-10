@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="322dp"
+            android:layout_marginTop="-10dp"
+            android:text="Map"
+            android:id="@+id/button12" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="136dp"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="81dp"
+                    android:layout_height="76dp"
+                    android:id="@+id/button13"
+                    android:background="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate"
+                    android:id="@+id/textView13"
+                    android:textColor="#040404"
+                    android:layout_marginTop="3dp"
+                    android:drawableLeft="@drawable/cancel_24"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="263dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Name"
+                    android:id="@+id/drivername"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="left|center"
+                    android:textColor="#040404"
+                    android:textSize="20dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Name"
+                    android:id="@+id/carname"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="left|center"
+                    android:textColor="#040404"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Number"
+                    android:id="@+id/carnumber"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="#040404"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/textfield"
+            android:weightSum="4"
+            android:gravity="bottom|center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calldriver"
+                    android:background="@drawable/textfield"
+                    android:drawableTop="@drawable/cancel_24"
+                    android:clickable="false"
+                    android:id="@+id/usecoupon"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rateride"
+                    android:drawableTop="@drawable/cancel_24"
+                    android:background="@drawable/textfield"
+                    android:clickable="false"
+                    android:id="@+id/mailinvoice"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share1details"
+                    android:drawableTop="@drawable/ic_menu_share"
+                    android:background="@drawable/textfield"
+                    android:id="@+id/support"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancelride"
+                    android:clickable="false"
+                    android:drawableTop="@drawable/com_facebook_close"
+                    android:background="@drawable/textfield"
+                    android:id="@+id/canecel"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

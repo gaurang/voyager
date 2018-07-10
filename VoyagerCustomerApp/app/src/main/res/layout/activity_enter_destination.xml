@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"/>
+<android.support.v7.widget.CardView
+    android:layout_margin="2dp"
+    android:background="@drawable/cart_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <AutoCompleteTextView
+        android:padding="20dp"
+        android:id="@+id/autocomplete_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Enter your destination"/>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_margin="2dp"
+        android:background="@drawable/cart_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:padding="10dp"
+    android:id="@+id/lenearHome"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/txtAddHome"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:background="@drawable/cart_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/lenearOffice"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:gravity="center"
+            />
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:id="@+id/txtAddWork"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Enter your Location"
+            android:scrollbars="none"
+             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/powered_by_google_light" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@color/light_black"
+        android:elevation="5dip"
+        android:orientation="vertical"
+        android:paddingTop="10dip">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="SELECT PAYMENT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+
+        <RadioGroup
+            android:id="@+id/rdbtn_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <!--
+                        <RadioButton
+                            android:id="@+id/rdbtn_Buisness"
+                            android:layout_width="wrap_content"
+                            android:button="@null"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:drawableRight="@android:drawable/btn_radio"
+                            android:padding="10dp"
+                            android:text="Buisness"
+                            android:textColor="@drawable/radiobtn_textselector"
+                            android:textSize="@dimen/text_size_22" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtn_Personal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:drawableRight="@android:drawable/btn_radio"
+                            android:text="Personal"
+                            android:button="@null"
+                            android:textColor="@drawable/radiobtn_textselector"
+                            android:textSize="@dimen/text_size_22" />-->
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_btn"
+                android:gravity="center"
+                android:padding="10dip"
+                android:text="CANCEL"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
