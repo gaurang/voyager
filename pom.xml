@@ -19,7 +19,7 @@
       <properties>
         <mysql.connector.version>5.1.31</mysql.connector.version>
         <springframework.version>4.3.17.RELEASE</springframework.version>
-		<spring.security.version>4.0.0.RELEASE</spring.security.version>
+		<spring.security.version>4.1.1.RELEASE</spring.security.version>
         
     </properties>
   
@@ -169,19 +169,19 @@
 		<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.9.1</version>
+            <version>2.9.5</version>
         </dependency>		
 				 
 		<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.9.1</version>
+            <version>2.9.5</version>
         </dependency>		
 
 		<dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.1</version>
+            <version>2.9.5</version>
         </dependency>		
 		<dependency>
 			<groupId>javax.servlet</groupId>
