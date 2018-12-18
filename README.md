@@ -31,7 +31,7 @@ You can run and deploy this project
 It uses Mysql database, Spring Hibernate code base and native angular technology
 
 # Steps:
-Install mysql DB from .sql scripts.<br/>
+Install mysql DB from hibernate code mapping<br/> (We are differenciating between Free and Premium versions as we conclude we will update SQL in project, to know further contact us)
 Make changes to messages.properties & hbm properties file to change config.<br/>
 create war and deploy.<br/>
 
